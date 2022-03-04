@@ -20,8 +20,7 @@ public class LocalisationSystem
 
     public static void Init()
     {
-        CSVLoader csvLoader = new CSVLoader();
-        csvLoader.LoadCSV();
+        CSVLoader csvLoader = new CSVLoader("localisation2");
 
         localisedEN = csvLoader.GetDictionaryValues("en");
         localisedFR = csvLoader.GetDictionaryValues("fr");
